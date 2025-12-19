@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://www.kurmacapital.com/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/capabilities.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/approach.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/insights.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/careers.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/contact.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/privacy.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.kurmacapital.com/regulatory.html</loc>
-  </url>
-
+  <url><loc>https://www.kurmacapital.com/</loc></url>
+  <url><loc>https://www.kurmacapital.com/capabilities.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/approach.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/insights.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/careers.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/contact.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/privacy.html</loc></url>
+  <url><loc>https://www.kurmacapital.com/regulatory.html</loc></url>
 </urlset>
