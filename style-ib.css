@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET
+   RESET
 ========================= */
 * {
   margin: 0;
@@ -8,14 +8,16 @@
 }
 
 /* =========================
-   ROOT VARIABLES
+   COLOR SYSTEM (IB STYLE)
 ========================= */
 :root {
-  --bg: #ffffff;
+  --navy: #0b1f3a;
+  --navy-soft: #122b4a;
   --ink: #0f172a;
   --muted: #475569;
-  --light: #f8fafc;
-  --border: #e5e7eb;
+  --light: #f6f8fb;
+  --border: #e2e8f0;
+  --white: #ffffff;
 }
 
 /* =========================
@@ -23,14 +25,14 @@
 ========================= */
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  background: var(--bg);
+  background: var(--white);
   color: var(--ink);
   line-height: 1.75;
   font-size: 16px;
 }
 
 a {
-  color: var(--ink);
+  color: var(--navy);
   text-decoration: none;
 }
 
@@ -42,65 +44,71 @@ a:hover {
    LAYOUT
 ========================= */
 .container {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 28px;
 }
 
 /* =========================
    HEADER / NAV
 ========================= */
 header {
+  background: var(--white);
   border-bottom: 1px solid var(--border);
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  height: 88px;
+  height: 92px;
 }
 
 .logo img {
-  height: 38px;
+  height: 36px;
 }
 
 nav {
   margin-left: auto;
   display: flex;
-  gap: 28px;
+  gap: 32px;
 }
 
 nav a {
   font-size: 14px;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--navy-soft);
 }
 
 nav a:hover {
-  color: var(--ink);
+  color: var(--navy);
 }
 
 /* =========================
-   HERO
+   HERO (DARK BLUE ACCENT)
 ========================= */
 .hero {
-  background: var(--light);
-  padding: 120px 0 140px;
+  background: linear-gradient(
+    180deg,
+    var(--light) 0%,
+    #ffffff 100%
+  );
+  padding: 140px 0 160px;
 }
 
 .hero-inner {
-  max-width: 760px;
+  max-width: 780px;
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: 28px;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+  color: var(--navy);
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 18.5px;
   color: var(--muted);
 }
 
@@ -114,26 +122,21 @@ section {
 .section-title {
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
+  color: var(--navy);
 }
 
 .section-text {
-  max-width: 720px;
+  max-width: 760px;
   font-size: 16.5px;
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 /* =========================
-   FOOTER
+   FOOTER (IB STYLE)
 ========================= */
 footer {
-  border-top: 1px solid var(--border);
-  padding: 40px 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-footer a {
-  color: var(--muted);
-}
+  background: var(--navy);
+  color: #cbd5e1;
+  padd
