@@ -975,3 +975,369 @@ li {
     padding: 20px;
   }
 }
+
+/* CONTACT PAGE STYLES - UPDATED */
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px;
+}
+
+.contact-email-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(11, 42, 63, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-email-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(11, 42, 63, 0.1);
+  border-color: var(--accent);
+}
+
+.contact-icon {
+  font-size: 64px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.contact-email-card h2 {
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-description {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-primary {
+  margin: 40px 0;
+}
+
+.primary-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--light-blue);
+  padding: 25px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.primary-email-link:hover {
+  background: var(--white);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(44, 143, 214, 0.15);
+}
+
+.email-icon {
+  font-size: 28px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.email-address {
+  font-size: 28px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.contact-note {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact Categories */
+.contact-categories {
+  margin: 80px 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.category-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 35px;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(11, 42, 63, 0.08);
+}
+
+.category-icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.category-card h3 {
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.category-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Response Section */
+.response-section {
+  margin: 80px 0 40px;
+}
+
+.response-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.response-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.response-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.response-item h3 {
+  font-size: 18px;
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.response-item p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.form-section {
+  margin: 80px 0;
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.form-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-box h2 {
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-box p {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--navy);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--ink);
+  background: var(--white);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(44, 143, 214, 0.1);
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 16px;
+  padding-right: 50px;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-note {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Responsive for Contact Page */
+@media (max-width: 768px) {
+  .contact-email-card {
+    padding: 40px 30px;
+  }
+  
+  .contact-email-card h2 {
+    font-size: 28px;
+  }
+  
+  .email-address {
+    font-size: 22px;
+  }
+  
+  .primary-email-link {
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .category-card {
+    padding: 30px;
+  }
+  
+  .response-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-email-card {
+    padding: 30px 20px;
+  }
+  
+  .contact-email-card h2 {
+    font-size: 24px;
+  }
+  
+  .email-address {
+    font-size: 18px;
+  }
+  
+  .primary-email-link {
+    padding: 15px 20px;
+  }
+  
+  .form-box h2 {
+    font-size: 26px;
+  }
+  
+  .contact-form {
+    padding: 25px;
+  }
+}
