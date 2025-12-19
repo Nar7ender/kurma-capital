@@ -553,3 +553,115 @@ li {
     min-width: 100%;
   }
 }
+
+/* APPROACH PAGE STYLES */
+.approach-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.approach-card {
+  display: flex;
+  gap: 30px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  align-items: flex-start;
+}
+
+.approach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(11, 42, 63, 0.08);
+  border-color: var(--accent);
+}
+
+.approach-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--light-blue);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.approach-content {
+  flex: 1;
+}
+
+.approach-card h3 {
+  font-size: 24px;
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.approach-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.approach-points {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.approach-points li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.approach-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.commitment-section {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+}
+
+/* Responsive for Approach Page */
+@media (max-width: 768px) {
+  .approach-card {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  .approach-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .approach-card h3 {
+    font-size: 20px;
+  }
+  
+  .approach-points li {
+    padding-left: 24px;
+  }
+}
