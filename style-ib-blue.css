@@ -8,16 +8,17 @@
 }
 
 /* =========================
-   COLOR SYSTEM (IB STYLE)
+   COLOR SYSTEM (IB BLUE)
 ========================= */
 :root {
-  --navy: #0b1f3a;
-  --navy-soft: #122b4a;
-  --ink: #0f172a;
+  --navy: #0B2A3F;
+  --navy-deep: #123E5A;
+  --accent: #2C8FD6;
+  --bg-soft: #F2F7FB;
+  --ink: #0F172A;
   --muted: #475569;
-  --light: #f6f8fb;
-  --border: #e2e8f0;
-  --white: #ffffff;
+  --border: #E2E8F0;
+  --white: #FFFFFF;
 }
 
 /* =========================
@@ -32,7 +33,7 @@ body {
 }
 
 a {
-  color: var(--navy);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -64,33 +65,33 @@ header {
 }
 
 .logo img {
-  height: 36px;
+  height: 34px;
 }
 
 nav {
   margin-left: auto;
   display: flex;
-  gap: 32px;
+  gap: 26px;
 }
 
 nav a {
   font-size: 14px;
   font-weight: 500;
-  color: var(--navy-soft);
-}
-
-nav a:hover {
   color: var(--navy);
 }
 
+nav a:hover {
+  color: var(--accent);
+}
+
 /* =========================
-   HERO (DARK BLUE ACCENT)
+   HERO (BLUE SECTION)
 ========================= */
 .hero {
   background: linear-gradient(
     180deg,
-    var(--light) 0%,
-    #ffffff 100%
+    var(--navy) 0%,
+    var(--navy-deep) 100%
   );
   padding: 140px 0 160px;
 }
@@ -104,16 +105,25 @@ nav a:hover {
   font-weight: 600;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
-  color: var(--navy);
+  color: var(--white);
+}
+
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 22px;
 }
 
 .hero p {
   font-size: 18.5px;
-  color: var(--muted);
+  color: #D6E4F0;
 }
 
 /* =========================
-   SECTIONS
+   SECTIONS (WHITE RESET)
 ========================= */
 section {
   padding: 120px 0;
@@ -134,9 +144,19 @@ section {
 }
 
 /* =========================
-   FOOTER (IB STYLE)
+   FOOTER
 ========================= */
 footer {
   background: var(--navy);
-  color: #cbd5e1;
-  padd
+  color: #CBD5E1;
+  padding: 48px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #CBD5E1;
+}
+
+footer a:hover {
+  color: var(--white);
+}
