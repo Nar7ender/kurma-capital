@@ -65,6 +65,61 @@
       </div>
     </div>
 
+    <!-- Contact Form -->
+    <div class="form-section">
+      <div class="form-box">
+        <h2>Send Us a Message</h2>
+        <p class="form-intro">Please provide details about your inquiry, and we will respond within 1-2 business days.</p>
+        
+        <form class="contact-form" action="#" method="POST">
+          <!-- Row 1: Name & Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+          </div>
+          
+          <!-- Row 2: Company -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Your company or organization">
+            </div>
+            <div class="form-group">
+              <label for="subject">Inquiry Type *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select inquiry type</option>
+                <option value="transaction">Transaction Advisory</option>
+                <option value="valuation">Valuation Services</option>
+                <option value="capital">Capital Strategy</option>
+                <option value="research">Research & Insights</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="career">Career Opportunity</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry in detail..."></textarea>
+          </div>
+          
+          <!-- Submit -->
+          <div class="form-submit">
+            <button type="submit" class="cta-button">Send Message</button>
+            <p class="form-note">We respect your privacy and will only use your information to respond to your inquiry.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- Contact Categories -->
     <div class="contact-categories">
       <h2 class="section-title">How We Can Help</h2>
@@ -102,56 +157,6 @@
             <li>Speaking engagements</li>
           </ul>
         </div>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <div class="form-section">
-      <div class="form-box">
-        <h2>Send Us a Message</h2>
-        <p>Please provide details about your inquiry, and we will respond within 1-2 business days.</p>
-        
-        <form class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="company">Company / Organization</label>
-            <input type="text" id="company" name="company">
-          </div>
-          
-          <div class="form-group">
-            <label for="subject">Inquiry Type *</label>
-            <select id="subject" name="subject" required>
-              <option value="" disabled selected>Select inquiry type</option>
-              <option value="transaction">Transaction Advisory</option>
-              <option value="valuation">Valuation Services</option>
-              <option value="capital">Capital Strategy</option>
-              <option value="research">Research & Insights</option>
-              <option value="partnership">Partnership Opportunity</option>
-              <option value="career">Career Opportunity</option>
-              <option value="general">General Inquiry</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry in detail..."></textarea>
-          </div>
-          
-          <div class="form-submit">
-            <button type="submit" class="cta-button">Send Message</button>
-            <p class="form-note">We respect your privacy and will only use your information to respond to your inquiry.</p>
-          </div>
-        </form>
       </div>
     </div>
 
