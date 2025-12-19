@@ -6,25 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Independent advisory and analytical services supporting complex capital decisions. Transaction advisory, valuation, corporate finance, and independent research.">
   <link rel="stylesheet" href="style-ib-blue.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
   <div class="container">
     <div class="navbar">
+      <!-- LARGER LOGO -->
       <div class="logo">
-        <img src="logo-primary.png" alt="Kurma Capital">
+        <img src="logo-primary.png" alt="Kurma Capital" style="height: 85px;">
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="capabilities.html" style="color: var(--accent); font-weight: 600;">Capabilities</a>
+        <a href="capabilities.html" class="active">Capabilities</a>
         <a href="approach.html">Our Approach</a>
         <a href="insights.html">Insights</a>
         <a href="careers.html">Careers</a>
-        <a href="contact.html" class="cta-button">Contact</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
       </nav>
     </div>
   </div>
@@ -41,115 +39,134 @@
 
 <section>
   <div class="container">
-    <p class="section-text" style="margin-bottom: 50px; max-width: 800px;">
-      We provide partner-led advisory across four core practice areas, each designed to address complex capital situations where judgment, independence, and deep analytical rigor are critical to success.
-    </p>
+    <div class="intro-text">
+      <p>We provide partner-led advisory across four core practice areas, each designed to address complex capital situations where judgment, independence, and deep analytical rigor are critical to success.</p>
+    </div>
 
-    <div class="capabilities-grid">
-      <!-- Transaction Advisory -->
-      <div class="capability-card">
-        <div class="capability-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-        </div>
-        <h3 class="capability-title">Transaction Advisory</h3>
-        <p class="capability-description">
-          We advise clients across the full lifecycle of transactions, including acquisitions, divestitures, joint ventures, and strategic investments.
-        </p>
-        <ul class="capability-list">
-          <li>Mergers & acquisitions (buy-side and sell-side)</li>
-          <li>Strategic partnerships and joint ventures</li>
-          <li>Private equity and strategic investor advisory</li>
-          <li>Transaction structuring and negotiation support</li>
-          <li>Financial and commercial due diligence</li>
-        </ul>
+    <div class="capability-section">
+      <div class="capability-header">
+        <div class="capability-number">01</div>
+        <h2>Transaction Advisory</h2>
       </div>
-
-      <!-- Valuation Advisory -->
-      <div class="capability-card">
-        <div class="capability-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="1" x2="12" y2="23"></line>
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-          </svg>
+      <p class="capability-description">
+        We advise clients across the full lifecycle of transactions, including acquisitions, divestitures, joint ventures, and strategic investments. Our focus is on structuring, evaluating, and executing transactions that align with long-term strategic and capital objectives.
+      </p>
+      <div class="capability-items">
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Mergers & acquisitions (buy-side and sell-side)</div>
         </div>
-        <h3 class="capability-title">Valuation Advisory</h3>
-        <p class="capability-description">
-          Independent valuation analysis across asset classes and transaction contexts, supporting decision-making, regulatory compliance, and stakeholder alignment.
-        </p>
-        <ul class="capability-list">
-          <li>Business and enterprise valuation</li>
-          <li>Transaction and fairness opinions</li>
-          <li>Valuation for fundraising, restructuring, and disputes</li>
-          <li>Intangible and strategic asset valuation</li>
-          <li>Independent review and second opinions</li>
-        </ul>
-      </div>
-
-      <!-- Corporate Finance & Capital Strategy -->
-      <div class="capability-card">
-        <div class="capability-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-          </svg>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Strategic partnerships and joint ventures</div>
         </div>
-        <h3 class="capability-title">Corporate Finance & Capital Strategy</h3>
-        <p class="capability-description">
-          Advisory on capital structure, funding strategy, and long-term financial planning, supporting sustainable growth and balance sheet resilience.
-        </p>
-        <ul class="capability-list">
-          <li>Capital structure optimisation</li>
-          <li>Equity and debt fundraising support</li>
-          <li>Financial modelling and scenario analysis</li>
-          <li>Strategic planning and capital allocation</li>
-          <li>IPO and public market readiness</li>
-        </ul>
-      </div>
-
-      <!-- Independent Research & Analysis -->
-      <div class="capability-card">
-        <div class="capability-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-          </svg>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Private equity and strategic investor advisory</div>
         </div>
-        <h3 class="capability-title">Independent Research & Analysis</h3>
-        <p class="capability-description">
-          Objective, conflict-free analysis on companies, sectors, and capital themes, designed for institutional and professional audiences.
-        </p>
-        <ul class="capability-list">
-          <li>Company and sector research</li>
-          <li>Investment and risk analysis</li>
-          <li>Market structure and competitive assessment</li>
-          <li>Long-cycle thematic research</li>
-          <li>Regulatory and policy impact analysis</li>
-        </ul>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Transaction structuring and negotiation support</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Financial and commercial due diligence</div>
+        </div>
       </div>
     </div>
 
-    <!-- How We Work Section -->
-    <div class="how-we-work">
-      <h2 class="section-title" style="margin-top: 80px;">How We Work</h2>
-      <div class="work-grid">
-        <div class="work-item">
-          <h4>Partner-Led</h4>
-          <p>Senior partners lead every engagement from start to finish, ensuring continuity and depth of insight.</p>
+    <div class="capability-section">
+      <div class="capability-header">
+        <div class="capability-number">02</div>
+        <h2>Valuation Advisory</h2>
+      </div>
+      <p class="capability-description">
+        We provide independent valuation analysis across asset classes and transaction contexts, supporting decision-making, regulatory compliance, and stakeholder alignment.
+      </p>
+      <div class="capability-items">
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Business and enterprise valuation</div>
         </div>
-        <div class="work-item">
-          <h4>Independent</h4>
-          <p>No conflicts of interest. Our advice is objective and aligned solely with client objectives.</p>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Transaction and fairness opinions</div>
         </div>
-        <div class="work-item">
-          <h4>Deep Analysis</h4>
-          <p>Rigorous quantitative and qualitative analysis forms the foundation of all our recommendations.</p>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Valuation for fundraising, restructuring, and disputes</div>
         </div>
-        <div class="work-item">
-          <h4>Long-Term Focus</h4>
-          <p>We prioritize sustainable value creation over short-term gains in every engagement.</p>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Intangible and strategic asset valuation</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Independent review and second opinions</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="capability-section">
+      <div class="capability-header">
+        <div class="capability-number">03</div>
+        <h2>Corporate Finance & Capital Strategy</h2>
+      </div>
+      <p class="capability-description">
+        We advise on capital structure, funding strategy, and long-term financial planning, supporting sustainable growth and balance sheet resilience.
+      </p>
+      <div class="capability-items">
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Capital structure optimisation</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Equity and debt fundraising support</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Financial modelling and scenario analysis</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Strategic planning and capital allocation</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">IPO and public market readiness</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="capability-section">
+      <div class="capability-header">
+        <div class="capability-number">04</div>
+        <h2>Independent Research & Analysis</h2>
+      </div>
+      <p class="capability-description">
+        Our research practice provides objective, conflict-free analysis on companies, sectors, and capital themes, designed for institutional and professional audiences.
+      </p>
+      <div class="capability-items">
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Company and sector research</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Investment and risk analysis</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Market structure and competitive assessment</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Long-cycle thematic research</div>
+        </div>
+        <div class="capability-item">
+          <div class="item-icon">→</div>
+          <div class="item-text">Regulatory and policy impact analysis</div>
         </div>
       </div>
     </div>
@@ -161,7 +178,7 @@
   <div class="container">
     <div class="footer-main">
       <div>
-        <img src="logo-primary.png" alt="Kurma Capital" class="footer-logo">
+        <img src="logo-primary.png" alt="Kurma Capital" class="footer-logo" style="height: 50px;">
         <p style="color: #CBD5E1; max-width: 300px; font-size: 14px; line-height: 1.6;">
           Independent capital advisory and research for complex financial decisions across market cycles.
         </p>
