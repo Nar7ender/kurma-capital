@@ -1641,3 +1641,113 @@ li {
     }
 }
 }
+
+
+
+
+
+/* PDF Boxes Styles for Kurma Capital */
+
+.pdf-boxes-section {
+    margin: 40px 0;
+}
+
+.pdf-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 30px 0 40px;
+}
+
+.pdf-blue-box {
+    background-color: #1a3c6e;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.pdf-blue-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pdf-blue-box .box-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.pdf-blue-box .box-icon {
+    margin-right: 12px;
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.pdf-blue-box .box-content {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.pdf-blue-box .box-link {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+.pdf-blue-box .box-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pdf-boxes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pdf-blue-box {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .pdf-blue-box .box-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-blue-box {
+        padding: 25px 20px;
+    }
+    
+    .pdf-blue-box .box-title {
+        font-size: 1.2rem;
+    }
+    
+    .pdf-blue-box .box-content {
+        font-size: 0.9rem;
+    }
+}
